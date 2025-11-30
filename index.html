@@ -4,51 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Mobiles.Creditcard – Mobile Wallets, NFC & Phone-Based Payments</title>
-  <meta name="description" content="Understand how mobile wallets and phone-based credit-card payments work: NFC, tokenization, security layers, device checks and how issuers authenticate transactions." />
+  <title>Mobiles.Creditcard – Mobile Wallets, Tap-to-Pay & Digital Card Security</title>
+  <meta name="description" content="How mobile wallets, tap-to-pay, virtual numbers and digital cards work. Independent overview of mobile-first credit-card payments and security." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://mobiles.creditcard/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Mobiles.Creditcard – Mobile Credit-Card Payments Explained" />
-  <meta property="og:description" content="A clear explanation of how Apple Pay, Google Pay and other mobile-wallet systems process card payments using tokenization and secure device checks." />
+  <!-- OG -->
+  <meta property="og:title" content="Mobiles.Creditcard – Mobile Wallet & Tap-to-Pay Guide" />
+  <meta property="og:description" content="Understand mobile-first payments: tap-to-pay, tokenization, virtual cards and digital-wallet security." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mobiles.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mobiles.Creditcard – How Phone-Based Card Payments Work" />
-  <meta name="twitter:description" content="Learn how your smartphone completes secure credit-card transactions using NFC, device tokens and multi-layered authentication." />
+  <meta name="twitter:title" content="Mobiles.Creditcard – Mobile Wallet & Digital Card Guide" />
+  <meta name="twitter:description" content="Tap-to-pay, tokenization, virtual cards and digital-wallet security—explained clearly." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body class="bg-slate-950 text-slate-100">
+
 <header class="site-header">
   <div class="nav-inner max-w-6xl">
     <div class="brand">
       <div class="cc-logo">CC</div>
       <div class="brand-text">
         <div class="brand-title">Mobiles.Creditcard</div>
-        <div class="brand-subtitle">Mobile Wallet & Phone-Based Payments</div>
+        <div class="brand-subtitle">Mobile Payments & Digital Wallets</div>
       </div>
     </div>
     <nav class="nav-links">
       <a href="#overview">Overview</a>
-      <a href="#mechanics">How It Works</a>
-      <a href="#compare">Compare</a>
+      <a href="#tap">Tap-to-Pay</a>
+      <a href="#security">Security</a>
     </nav>
   </div>
 </header>
@@ -58,16 +61,16 @@
   <!-- Breadcrumb -->
   <div class="cc-breadcrumb">
     <a href="https://choose.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
-    &nbsp;›&nbsp;
-    Mobiles.Creditcard
+    &nbsp;›&nbsp; Mobiles.Creditcard
   </div>
 
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <h1>How Mobile Wallets Turn Your Phone Into a Secure Credit Card</h1>
+      <h1>How Mobile-First Credit-Card Payments Work</h1>
       <p class="hero-lead">
-        Mobile wallets replace your physical card with a secure digital token stored inside your device. NFC, biometrics and issuer-side authentication work together each time you tap your phone at a terminal.
+        Tap-to-pay, tokenization, mobile wallets and virtual card numbers have changed how credit cards work in everyday use.  
+        Here’s what actually happens under the hood — and what matters for security and fees.
       </p>
       <a class="cta" href="https://choose.creditcard/technology/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=hero_cta">
         Explore the Technology hub
@@ -77,134 +80,104 @@
 
   <!-- Overview -->
   <section id="overview" class="section">
-    <h2>What Counts as a Mobile Credit-Card Payment?</h2>
-    <p>Mobile payments occur when you tap your smartphone or smartwatch instead of a physical card. Services like Apple Pay, Google Pay and Samsung Wallet store a digital version of your card inside a secure chip on your device.</p>
-    <p>Your real card number is never shared with merchants. Instead, a unique device-specific token is used, adding a layer of security on top of traditional card networks.</p>
-  </section>
-
-  <!-- Mechanics -->
-  <section id="mechanics" class="section">
-    <h2>How the Payment Flow Works</h2>
-    <p>When you authenticate with Face ID, Touch ID or a PIN, the device unlocks a stored payment token. This token is transmitted via NFC to the terminal, which forwards it through the card network to your issuer.</p>
-    <p>The issuer checks device ID, cryptograms, wallet metadata and transaction risk signals. Only if everything aligns does the issuer approve the transaction, all within milliseconds.</p>
-  </section>
-
-  <section class="section">
-    <h2>Security: Why Mobile Payments Are Often Safer</h2>
-    <p>Because merchants never see your real card number, large-scale card database breaches become less impactful. Even if a payment token were intercepted, it cannot be reused outside the specific device it belongs to.</p>
-    <p>Biometric authentication also means stolen phones are far less risky than stolen cards — there’s no magnetic stripe for attackers to skim or clone.</p>
-  </section>
-
-  <section class="section">
-    <h2>Compatibility & Payment Limits</h2>
-    <p>Most modern terminals accept NFC payments, but some regions still have terminals that prefer chip insert. Mobile-wallet limits usually follow issuer rules — not the phone’s software — meaning the same daily or per-transaction caps apply as with your physical card.</p>
-    <p>Some transit systems and vending environments allow tap-and-go without biometric confirmation for speed, but those rely on special low-risk processing rails.</p>
-  </section>
-
-  <!-- Comparison Table -->
-  <section id="compare" class="section">
-    <h2>Comparing Mobile Wallet Features</h2>
-    <div class="table-wrap">
-      <table class="table">
-        <thead>
-        <tr>
-          <th>Feature</th>
-          <th>What to Check</th>
-          <th>Why It Matters</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Tokenization Method</td>
-          <td>Device-based vs cloud-based storage</td>
-          <td>Affects how payments are validated and how secure they are.</td>
-        </tr>
-        <tr>
-          <td>Biometric Options</td>
-          <td>Face ID, fingerprint, watch unlock</td>
-          <td>Determines the convenience and security of each tap.</td>
-        </tr>
-        <tr>
-          <td>Supported Cards</td>
-          <td>Which networks and issuers allow mobile pairing</td>
-          <td>Some issuers restrict wallet use or limits.</td>
-        </tr>
-        <tr>
-          <td>Transit Mode</td>
-          <td>Express or tap-and-go features</td>
-          <td>Important for travel and high-speed environments.</td>
-        </tr>
-        <tr>
-          <td>Risk Controls</td>
-          <td>How lost-device scenarios are handled</td>
-          <td>Determines how quickly tokens can be revoked or replaced.</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="small">
-      For deeper technical guides, visit the
-      <a href="https://choose.creditcard/technology/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-        Technology hub
-      </a>.
+    <h2>Mobile Wallets: A Layer on Top of the Card</h2>
+    <p>
+      Apple Pay, Google Wallet and Samsung Wallet don’t replace your card issuer — they add a secure layer between 
+      your physical card and the terminal. Each payment uses a device-specific, tokenized card number rather than 
+      the real 16-digit PAN.
+    </p>
+    <p>
+      This reduces fraud, hides your actual card details and simplifies usage abroad, where physical cards may fail 
+      due to magnetic-stripe fallback or outdated terminals.
     </p>
   </section>
 
-  <!-- Cluster Links -->
+  <!-- Tap to pay -->
+  <section id="tap" class="section">
+    <h2>How Tap-to-Pay Actually Works</h2>
+    <p>
+      When you tap your phone or watch at a terminal, NFC transmits a one-time cryptographic code generated on-device.  
+      The merchant never receives your real card number — only a token that your issuer can verify.
+    </p>
+    <ul>
+      <li><strong>NFC</strong> → short-range transmission of encrypted data</li>
+      <li><strong>Tokenization</strong> → device-specific replacement number</li>
+      <li><strong>Dynamic CVV</strong> → changes on every transaction</li>
+      <li><strong>Authentication</strong> → biometrics before payment</li>
+    </ul>
+    <p>
+      Because of dynamic data, stolen terminal logs are useless — nothing can be reused.
+    </p>
+  </section>
+
+  <!-- Security section -->
+  <section id="security" class="section">
+    <h2>Security & Fraud Prevention</h2>
+    <p>
+      Mobile-wallet transactions are generally safer than chip or physical card use because authentication happens 
+      on the device before a token is released.
+    </p>
+    <ul>
+      <li>No real card number shared</li>
+      <li>Biometric unlock required</li>
+      <li>Terminal never stores sensitive data</li>
+      <li>Tokens can be revoked instantly if a device is lost</li>
+    </ul>
+    <p>
+      Virtual numbers inside wallets can also be generated for subscriptions, one-time purchases or online checkouts.
+    </p>
+  </section>
+
+  <!-- Related tech minisites -->
   <section class="section">
-    <h2>Explore Related Technology Microsites</h2>
+    <h2>Explore Related Payment Technology Topics</h2>
     <div class="cluster-grid">
-      <a class="cluster-card" href="https://tap.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_tap">
-        <h3>Tap.Creditcard</h3>
-        <p>How NFC tap-to-pay card transactions work.</p>
-      </a>
-      <a class="cluster-card" href="https://tappay.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_tappay">
-        <h3>TapPay.Creditcard</h3>
-        <p>The intersection of phones, terminals and tokenized payments.</p>
-      </a>
-      <a class="cluster-card" href="https://nfc.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_nfc">
-        <h3>NFC.Creditcard</h3>
-        <p>Deep dive into Near-Field Communication and its payment role.</p>
-      </a>
+
       <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
         <h3>VirtualPay.Creditcard</h3>
-        <p>How virtual card numbers function inside mobile wallets.</p>
+        <p>Virtual card numbers for online and subscription spending.</p>
       </a>
-      <a class="cluster-card" href="https://digi.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_digi">
-        <h3>Digi.Creditcard</h3>
-        <p>Digital card identities and device-first authentication.</p>
+
+      <a class="cluster-card" href="https://tappay.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_tappay">
+        <h3>TapPay.Creditcard</h3>
+        <p>Deep dive into NFC tap-to-pay mechanics and issuer handling.</p>
       </a>
+
+      <a class="cluster-card" href="https://nfc.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_nfc">
+        <h3>NFC.Creditcard</h3>
+        <p>The underlying transmission layer behind tap-to-pay.</p>
+      </a>
+
+      <a class="cluster-card" href="https://wallets.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_wallets">
+        <h3>Wallets.Creditcard</h3>
+        <p>Digital wallets, device security and tokenized payment flows.</p>
+      </a>
+
+      <a class="cluster-card" href="https://digitalpay.creditcard/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=cluster_digitalpay">
+        <h3>DigitalPay.Creditcard</h3>
+        <p>How digital cards handle authentication, security and risk scoring.</p>
+      </a>
+
     </div>
   </section>
 
-  <!-- Collection -->
+  <!-- Network connection -->
   <section class="section">
     <h2>Part of The CreditCard Collection</h2>
     <p class="small">
-      Mobiles.Creditcard is one of the technology-focused microsites within <strong>The CreditCard Collection</strong>, operated by ronarn AS. Each page explains a single concept in the payment ecosystem.
+      Mobiles.Creditcard is one of many educational microsites in The CreditCard Collection by ronarn AS —  
+      each explaining a single part of modern credit-card infrastructure before linking back to the main hubs.
     </p>
     <p class="small">
-      This page is informational only. Always review your issuer’s documentation for specific wallet support and security details.
+      Nothing here is financial advice. Always verify details with your issuer before applying or traveling.
     </p>
 
-    <!-- REQUIRED HUB SNIPPET -->
     <div class="hub-link">
       <a href="https://choose.creditcard/technology/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
-         class="text-sm text-slate-600 hover:text-slate-900">
-        Learn more at the Technology hub
+         class="text-sm text-slate-500 hover:text-slate-200">
+        Visit the Technology hub at Choose.Creditcard
       </a>
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section">
-    <h2>Ready to Explore Mobile Payment Tech?</h2>
-    <p class="small">
-      Learn how your phone interacts with terminals, issuers and wallet services — then dive deeper inside the Technology hub for more detailed guides.
-    </p>
-    <a class="cta" href="https://choose.creditcard/technology/?utm_source=mobiles.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-      Go to the Technology hub
-    </a>
   </section>
 
 </main>
